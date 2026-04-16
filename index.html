@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryan Chaudhary — UI/UX Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Grid Background -->
+    <div class="grid-bg"></div>
+
+    <!-- Glow orbs -->
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <a href="#" class="nav-logo">
+            <span class="logo-bracket">&lt;</span>AC<span class="logo-bracket">/&gt;</span>
+        </a>
+        <div class="nav-links" id="nav-links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <button class="nav-burger" id="nav-burger" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-status">
+                <span class="status-dot"></span>
+                <span class="status-text glitch-text" data-text="OPEN TO WORK">OPEN TO WORK</span>
+            </div>
+            <h1 class="hero-name">
+                <span class="line anim-up">Aryan</span>
+                <span class="line anim-up delay-1">Chaudhary<span class="cursor-blink">_</span></span>
+            </h1>
+            <p class="hero-role anim-up delay-2">
+                <span class="role-tag">UI/UX Designer</span>
+                <span class="role-divider">//</span>
+                <span>DIT University, Dehradun</span>
+            </p>
+            <p class="hero-desc anim-up delay-3">
+                I design interfaces that merge aesthetics with function —<br>
+                pixel-perfect, user-first, always.
+            </p>
+            <div class="hero-actions anim-up delay-4">
+                <a href="#projects" class="btn-neon">
+                    <span>Explore Work</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#contact" class="btn-ghost">Say Hello</a>
+            </div>
+        </div>
+        <div class="hero-terminal anim-up delay-3">
+            <div class="terminal-bar">
+                <span class="terminal-dot red"></span>
+                <span class="terminal-dot yellow"></span>
+                <span class="terminal-dot green"></span>
+                <span class="terminal-title">aryan@portfolio:~</span>
+            </div>
+            <div class="terminal-body">
+                <p><span class="t-prompt">$</span> cat about.txt</p>
+                <p class="t-output">Name: Aryan Chaudhary</p>
+                <p class="t-output">Role: UI/UX Design Student</p>
+                <p class="t-output">College: DIT University, Dehradun</p>
+                <p class="t-output">Year: 1st Year B.Des</p>
+                <p><span class="t-prompt">$</span> echo $PASSION</p>
+                <p class="t-output t-highlight">Crafting digital experiences ✦</p>
+                <p><span class="t-prompt">$</span> <span class="cursor-blink">_</span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scrolling Ticker -->
+    <div class="ticker">
+        <div class="ticker-track">
+            <span>★ UI DESIGN</span><span>★ UX RESEARCH</span><span>★ FIGMA</span><span>★ PROTOTYPING</span><span>★ WIREFRAMING</span><span>★ INTERACTION DESIGN</span>
+            <span>★ UI DESIGN</span><span>★ UX RESEARCH</span><span>★ FIGMA</span><span>★ PROTOTYPING</span><span>★ WIREFRAMING</span><span>★ INTERACTION DESIGN</span>
+        </div>
+    </div>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title reveal"><span class="section-num">01.</span> About Me</h2>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p>
+                        I'm Aryan Chaudhary, a first-year UI/UX Design student at
+                        <strong>DIT University, Dehradun</strong>. I did my schooling at
+                        <strong>Shirdi Sai Public School</strong> before moving to Dehradun to
+                        pursue design professionally.
+                    </p>
+                    <p>
+                        I believe great design is invisible — it just works.
+                        My approach combines clean aesthetics with deep empathy for
+                        the end user, creating experiences that are both beautiful and intuitive.
+                    </p>
+                </div>
+                <div class="about-cards">
+                    <div class="info-card reveal">
+                        <div class="info-card-icon">🎓</div>
+                        <div>
+                            <h4>Education</h4>
+                            <p>DIT University — B.Des UI/UX (1st Year)</p>
+                            <p class="muted">12th — Shirdi Sai Public School</p>
+                        </div>
+                    </div>
+                    <div class="info-card reveal">
+                        <div class="info-card-icon">🎯</div>
+                        <div>
+                            <h4>Focus Areas</h4>
+                            <p>User Interface Design, User Research, Prototyping, Design Systems</p>
+                        </div>
+                    </div>
+                    <div class="info-card reveal">
+                        <div class="info-card-icon">🛠️</div>
+                        <div>
+                            <h4>Tools</h4>
+                            <div class="tag-row">
+                                <span class="neon-tag">Figma</span>
+                                <span class="neon-tag">Adobe XD</span>
+                                <span class="neon-tag">Photoshop</span>
+                                <span class="neon-tag">Illustrator</span>
+                                <span class="neon-tag">Canva</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title reveal"><span class="section-num">02.</span> Projects</h2>
+            <p class="section-sub reveal">Selected work and design explorations.</p>
+            <div class="projects-grid" id="projects-grid"></div>
+            <div class="no-projects" id="no-projects" style="display:none;">
+                <div class="empty-box">
+                    <span class="empty-icon">//</span>
+                    <p>No projects yet — check back soon.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title reveal"><span class="section-num">03.</span> Skills</h2>
+            <div class="skills-list">
+                <div class="skill-row reveal">
+                    <span class="skill-name">UI Design</span>
+                    <div class="skill-bar"><div class="skill-fill" style="--fill:90%"></div></div>
+                </div>
+                <div class="skill-row reveal">
+                    <span class="skill-name">UX Research</span>
+                    <div class="skill-bar"><div class="skill-fill" style="--fill:75%"></div></div>
+                </div>
+                <div class="skill-row reveal">
+                    <span class="skill-name">Prototyping</span>
+                    <div class="skill-bar"><div class="skill-fill" style="--fill:85%"></div></div>
+                </div>
+                <div class="skill-row reveal">
+                    <span class="skill-name">Wireframing</span>
+                    <div class="skill-bar"><div class="skill-fill" style="--fill:80%"></div></div>
+                </div>
+                <div class="skill-row reveal">
+                    <span class="skill-name">Figma</span>
+                    <div class="skill-bar"><div class="skill-fill" style="--fill:88%"></div></div>
+                </div>
+                <div class="skill-row reveal">
+                    <span class="skill-name">Visual Design</span>
+                    <div class="skill-bar"><div class="skill-fill" style="--fill:82%"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title reveal"><span class="section-num">04.</span> Get In Touch</h2>
+            <div class="contact-box reveal">
+                <h3>Let's build something <span class="neon-text">awesome</span> together.</h3>
+                <p>Whether it's a project, internship, or just a chat about design — I'm all ears.</p>
+                <div class="contact-links">
+                    <a href="mailto:aryan@example.com" class="contact-item">
+                        <span class="contact-label">Email</span>
+                        <span class="contact-value">aryan@example.com ↗</span>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="contact-item">
+                        <span class="contact-label">LinkedIn</span>
+                        <span class="contact-value">linkedin.com/in/aryan ↗</span>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="contact-item">
+                        <span class="contact-label">Instagram</span>
+                        <span class="contact-value">@aryan.designs ↗</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-row">
+            <span>&lt;/&gt; Aryan Chaudhary © 2026</span>
+            <span>Built from Dehradun with 💙</span>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
