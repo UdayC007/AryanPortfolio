@@ -29,13 +29,15 @@
     <!-- Navigation -->
     <nav class="nav" id="nav">
         <a href="#" class="nav-logo">
-            <span class="logo-rank">★</span> ARYAN_C
+            <span class="brand-mark"><span class="logo-rank">★</span></span>
+            <span id="nav-name">ARYAN_C</span>
         </a>
         <div class="nav-links" id="nav-links">
             <a href="#about"><span class="nav-key">[1]</span> RECON</a>
-            <a href="#projects"><span class="nav-key">[2]</span> LOOT</a>
-            <a href="#skills"><span class="nav-key">[3]</span> STATS</a>
-            <a href="#contact"><span class="nav-key">[4]</span> COMMS</a>
+            <a href="#curriculum"><span class="nav-key">[2]</span> SEM I</a>
+            <a href="#projects"><span class="nav-key">[3]</span> LOOT</a>
+            <a href="#skills"><span class="nav-key">[4]</span> STATS</a>
+            <a href="#contact"><span class="nav-key">[5]</span> COMMS</a>
         </div>
         <button class="nav-burger" id="nav-burger" aria-label="Menu">
             <span></span><span></span><span></span>
@@ -51,15 +53,15 @@
                 <span class="alert-text">PLAYER SPOTTED — ZONE: DEHRADUN</span>
             </div>
             <h1 class="hero-name anim-up delay-1">
-                <span class="name-line">ARYAN</span>
-                <span class="name-line outline">CHAUDHARY</span>
+                <span class="name-line" id="hero-first">ARYAN</span>
+                <span class="name-line outline" id="hero-last">CHAUDHARY</span>
             </h1>
             <div class="hero-tags anim-up delay-2">
-                <span class="tag-military">UI/UX DESIGNER</span>
+                <span class="tag-military" id="hero-title">UI/UX DESIGNER</span>
                 <span class="tag-sep">|</span>
-                <span class="tag-location">📍 DIT UNIVERSITY, DEHRADUN</span>
+                <span class="tag-location" id="hero-college">📍 DIT UNIVERSITY, DEHRADUN</span>
             </div>
-            <p class="hero-desc anim-up delay-3">
+            <p class="hero-desc anim-up delay-3" id="hero-tagline">
                 Designing digital experiences with precision.<br>
                 Every pixel is a calculated move.
             </p>
@@ -97,6 +99,7 @@
             <div class="minimap-zone"></div>
             <span class="minimap-label">ERANGEL</span>
         </div>
+        <div class="hero-portrait-photo" id="hero-portrait-photo"></div>
     </section>
 
     <!-- Airdrop notification bar -->
@@ -126,17 +129,25 @@
             </div>
             <div class="about-grid">
                 <div class="about-text reveal">
-                    <p>
-                        <strong>Codename:</strong> Aryan Chaudhary<br>
-                        <strong>Base of Operations:</strong> DIT University, Dehradun<br>
-                        <strong>Previous Station:</strong> Shirdi Sai Public School, Moradabad<br>
-                        <strong>Rank:</strong> 1st Year — B.Des UI/UX Design
+                    <div class="about-portrait" id="about-portrait"></div>
+                    <p id="about-stats-block">
+                        <strong>Codename:</strong> <span id="about-name">Aryan Chaudhary</span><br>
+                        <strong>Base of Operations:</strong> <span id="about-college">DIT University, Dehradun</span><br>
+                        <strong>Rank:</strong> <span id="about-rank">1st Year — UI/UX Designer</span>
                     </p>
-                    <p>
-                        A design soldier who believes in precision over spray-and-pray.
-                        Every interface is a battleground where usability meets aesthetics.
-                        I don't just design screens — I design victories.
-                    </p>
+                    <p id="about-bio">A design soldier who believes in precision over spray-and-pray.</p>
+                    <div class="about-extra">
+                        <div class="extra-card">
+                            <span class="ec-tag">// PERSONAL TOUCH</span>
+                            <h4>Off-mission</h4>
+                            <p id="personal-touch">—</p>
+                        </div>
+                        <div class="extra-card">
+                            <span class="ec-tag">// MISSION GOALS</span>
+                            <h4>Where I'm headed</h4>
+                            <p id="goals-text">—</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="about-cards">
                     <div class="loot-card reveal">
@@ -184,6 +195,17 @@
         </div>
     </section>
 
+    <!-- Curriculum — Semester I -->
+    <section class="curriculum" id="curriculum">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="section-tag">// CURRICULUM // SEMESTER I</span>
+                <h2>SUBJECTS &amp; <span class="accent">FACULTY</span></h2>
+            </div>
+            <div class="subject-grid" id="subject-grid"></div>
+        </div>
+    </section>
+
     <!-- Projects — Loot Crate -->
     <section class="projects" id="projects">
         <div class="container">
@@ -209,74 +231,7 @@
                 <span class="section-tag">// PLAYER STATS</span>
                 <h2>COMBAT <span class="accent">SKILLS</span></h2>
             </div>
-            <div class="stats-grid">
-                <div class="stat-card reveal">
-                    <div class="stat-bar-ring">
-                        <svg viewBox="0 0 100 100">
-                            <circle cx="50" cy="50" r="40" class="ring-bg"/>
-                            <circle cx="50" cy="50" r="40" class="ring-fill" style="--percent:90"/>
-                        </svg>
-                        <span class="stat-percent">90</span>
-                    </div>
-                    <h4>UI Design</h4>
-                    <p>Pixel-perfect interfaces</p>
-                </div>
-                <div class="stat-card reveal">
-                    <div class="stat-bar-ring">
-                        <svg viewBox="0 0 100 100">
-                            <circle cx="50" cy="50" r="40" class="ring-bg"/>
-                            <circle cx="50" cy="50" r="40" class="ring-fill" style="--percent:78"/>
-                        </svg>
-                        <span class="stat-percent">78</span>
-                    </div>
-                    <h4>UX Research</h4>
-                    <p>User intel gathering</p>
-                </div>
-                <div class="stat-card reveal">
-                    <div class="stat-bar-ring">
-                        <svg viewBox="0 0 100 100">
-                            <circle cx="50" cy="50" r="40" class="ring-bg"/>
-                            <circle cx="50" cy="50" r="40" class="ring-fill" style="--percent:85"/>
-                        </svg>
-                        <span class="stat-percent">85</span>
-                    </div>
-                    <h4>Prototyping</h4>
-                    <p>Battle-tested demos</p>
-                </div>
-                <div class="stat-card reveal">
-                    <div class="stat-bar-ring">
-                        <svg viewBox="0 0 100 100">
-                            <circle cx="50" cy="50" r="40" class="ring-bg"/>
-                            <circle cx="50" cy="50" r="40" class="ring-fill" style="--percent:82"/>
-                        </svg>
-                        <span class="stat-percent">82</span>
-                    </div>
-                    <h4>Wireframing</h4>
-                    <p>Tactical blueprints</p>
-                </div>
-                <div class="stat-card reveal">
-                    <div class="stat-bar-ring">
-                        <svg viewBox="0 0 100 100">
-                            <circle cx="50" cy="50" r="40" class="ring-bg"/>
-                            <circle cx="50" cy="50" r="40" class="ring-fill" style="--percent:88"/>
-                        </svg>
-                        <span class="stat-percent">88</span>
-                    </div>
-                    <h4>Figma</h4>
-                    <p>Primary weapon</p>
-                </div>
-                <div class="stat-card reveal">
-                    <div class="stat-bar-ring">
-                        <svg viewBox="0 0 100 100">
-                            <circle cx="50" cy="50" r="40" class="ring-bg"/>
-                            <circle cx="50" cy="50" r="40" class="ring-fill" style="--percent:75"/>
-                        </svg>
-                        <span class="stat-percent">75</span>
-                    </div>
-                    <h4>Design Systems</h4>
-                    <p>Squad coordination</p>
-                </div>
-            </div>
+            <div class="stats-grid" id="stats-grid"></div>
         </div>
     </section>
 
@@ -294,26 +249,7 @@
                 </div>
                 <h3>Ready to squad up? <span class="accent">Let's go.</span></h3>
                 <p>Whether it's a design mission or a friendly chat — drop me a message.</p>
-                <div class="comms-links">
-                    <a href="mailto:aryan@example.com" class="comms-link">
-                        <span class="comms-key">[E]</span>
-                        <span class="comms-label">EMAIL</span>
-                        <span class="comms-value">aryan@example.com</span>
-                        <span class="comms-arrow">→</span>
-                    </a>
-                    <a href="https://linkedin.com" target="_blank" class="comms-link">
-                        <span class="comms-key">[L]</span>
-                        <span class="comms-label">LINKEDIN</span>
-                        <span class="comms-value">linkedin.com/in/aryan</span>
-                        <span class="comms-arrow">→</span>
-                    </a>
-                    <a href="https://instagram.com" target="_blank" class="comms-link">
-                        <span class="comms-key">[I]</span>
-                        <span class="comms-label">INSTAGRAM</span>
-                        <span class="comms-value">@aryan.designs</span>
-                        <span class="comms-arrow">→</span>
-                    </a>
-                </div>
+                <div class="comms-links" id="msg-links"></div>
             </div>
         </div>
     </section>
@@ -321,12 +257,11 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container footer-row">
-            <span>★ ARYAN CHAUDHARY © 2026</span>
+            <span id="footer-name">★ ARYAN CHAUDHARY © 2026</span>
             <span>WINNER WINNER CHICKEN DINNER 🍗</span>
         </div>
     </footer>
 
-    <script src="js/data.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
