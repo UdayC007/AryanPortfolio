@@ -42,7 +42,8 @@ async function loadProject() {
   try {
     const r = await fetch('data/projects.json');
     if (!r.ok) throw new Error('Could not load projects');
-    const list = await r.json();
+    const data = await r.json();
+    const list = Array.isArray(data) ? data : (data.items || []);
     const p = list.find(x => x.id === projectId());
     if (!p) throw new Error('Intel not found');
     document.title = p.title + ' — Aryan Portfolio';
