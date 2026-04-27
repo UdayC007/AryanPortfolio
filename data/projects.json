@@ -1,6 +1,23 @@
 {
   "items": [
     {
+      "id": "p3-form-studies",
+      "title": "Form Studies — Paper, Foam, Wire",
+      "description": "A three-part hands-on study of three-dimensional form across very different materials.\n\n**Paper:** concentric arcs cut and folded out of a flat sheet, then stood up — a small cathedral made by removing the right amount of nothing.\n\n**Foam (thermocol):** a circle and three square modules carved into different depths of recess, exploring how mass changes when you take volume away from inside it.\n\n**Wire:** a vocabulary of single-line objects — a snail, tulip, butterfly, jellyfish, wine glass, camera, drum, umbrella, the word *love* — each made by bending one continuous strand. A study in describing a thing using only its outline.",
+      "teacher": "Anugraha",
+      "category": "Form Studies",
+      "year": "2025",
+      "tags": ["3D", "Form", "Materials", "Paper", "Wire", "Foam"],
+      "link": "",
+      "color": "#cccccc",
+      "images": [
+        "uploads/aryan-p3-paper-arcs.jpg",
+        "uploads/aryan-p3-foam-forms.jpg",
+        "uploads/aryan-p3-wire-objects.jpg"
+      ],
+      "createdAt": 1745732000000
+    },
+    {
       "id": "p2-kantha-history",
       "title": "Weaving a Sustainable Future",
       "description": "A textile-art installation exploring Kantha — the traditional embroidery of West Bengal and Bangladesh — through the story of Amma, a village elder whose stitches hold a community together. Using a 5W analysis (Where, When, Who, What, Why), the project ties this 19th-century craft to the UN Sustainable Development Goals, showing how slow, hand-stitched making becomes a quiet form of climate action and cultural memory.\n\nGroup project: Lakshay, Manvi, Pranshi, Amoli, Priyan.",

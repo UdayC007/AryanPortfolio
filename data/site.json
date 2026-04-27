@@ -17,7 +17,8 @@
   },
   "subjects": [
     { "code": "", "name": "Empathy and Design", "faculty": "Lakshmi" },
-    { "code": "", "name": "History", "faculty": "" }
+    { "code": "", "name": "History", "faculty": "" },
+    { "code": "", "name": "Form Studies", "faculty": "Anugraha" }
   ],
   "skills": [
     { "name": "UI Design",       "level": 90, "rank": "S" },
