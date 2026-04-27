@@ -1,0 +1,35 @@
+{
+  "profile": {
+    "name": "Aryan Chaudhary",
+    "title": "UI/UX Designer",
+    "year": "1st Year",
+    "college": "DIT University, Dehradun",
+    "tagline": "Designing digital experiences with precision. Every pixel is a calculated move.",
+    "bio": "A first-year design student treating every interface like a tactical drop. Mapping the field, picking the right loadout, executing clean.",
+    "personalTouch": "Outside the dropzone I play strategy games, build bad mechanical keyboards, and study how good HUDs guide attention without screaming.",
+    "goals": "Build a portfolio of shipped tactical interfaces; learn motion design properly; intern at a product team that values craft."
+  },
+  "contact": {
+    "email": "",
+    "instagram": "",
+    "twitter": "",
+    "linkedin": ""
+  },
+  "subjects": [
+    { "code": "CSE101", "name": "Programming Fundamentals", "faculty": "" },
+    { "code": "MAT101", "name": "Engineering Mathematics I", "faculty": "" },
+    { "code": "PHY101", "name": "Engineering Physics", "faculty": "" },
+    { "code": "ENG101", "name": "Communication Skills", "faculty": "" },
+    { "code": "ELC101", "name": "Basic Electronics", "faculty": "" },
+    { "code": "WSP101", "name": "Workshop Practice", "faculty": "" }
+  ],
+  "skills": [
+    { "name": "UI Design",       "level": 90, "rank": "S" },
+    { "name": "UX Research",     "level": 78, "rank": "A" },
+    { "name": "Prototyping",     "level": 85, "rank": "S" },
+    { "name": "Wireframing",     "level": 82, "rank": "A" },
+    { "name": "Figma",           "level": 88, "rank": "S" },
+    { "name": "Design Systems",  "level": 75, "rank": "A" }
+  ],
+  "photos": { "hero": null, "about": null, "brand": null }
+}

@@ -8,6 +8,8 @@ const nav = document.querySelector('.nav');
 window.addEventListener('scroll', () => nav && nav.classList.toggle('scrolled', window.scrollY > 50));
 
 function projectId() {
+  const params = new URLSearchParams(window.location.search);
+  if (params.get('id')) return params.get('id');
   const parts = window.location.pathname.split('/').filter(Boolean);
   return parts[parts.length - 1];
 }
@@ -21,7 +23,7 @@ function gallerySize(i, total) {
 
 async function loadSite() {
   try {
-    const r = await fetch('/api/site');
+    const r = await fetch('data/site.json');
     const s = await r.json();
     const p = s.profile || {};
     const initial = (p.name || 'A').charAt(0).toUpperCase();
@@ -38,9 +40,11 @@ async function loadSite() {
 async function loadProject() {
   const root = $('project-root');
   try {
-    const r = await fetch('/api/projects/' + encodeURIComponent(projectId()));
-    if (!r.ok) throw new Error('Intel not found');
-    const p = await r.json();
+    const r = await fetch('data/projects.json');
+    if (!r.ok) throw new Error('Could not load projects');
+    const list = await r.json();
+    const p = list.find(x => x.id === projectId());
+    if (!p) throw new Error('Intel not found');
     document.title = p.title + ' — Aryan Portfolio';
 
     const all = p.images || [];
@@ -83,11 +87,11 @@ async function loadProject() {
         </div>` : ''}
 
       <div style="text-align:center;margin-top:30px">
-        <a href="/#projects" class="btn-ghost-s">← MORE INTEL</a>
+        <a href="index.html#projects" class="btn-ghost-s">← MORE INTEL</a>
       </div>
     `;
   } catch (e) {
-    root.innerHTML = `<div class="sys-window"><div class="sys-bar"><span class="sys-bar-dot"></span><span class="sys-bar-title">SYSTEM</span><span class="sys-bar-x">—</span></div><div class="sys-body" style="text-align:center;padding:50px"><p class="sys-msg">${esc(e.message)}</p><p class="sys-msg-sub">This intel may have been removed. <a href="/" style="color:var(--purple-bright)">Return to base →</a></p></div></div>`;
+    root.innerHTML = `<div style="text-align:center;padding:60px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius)"><h3 style="font-family:var(--font-display);font-size:2rem;color:var(--yellow)">${esc(e.message)}</h3><p style="color:var(--text-sec);margin-top:10px">This intel may have been wiped. <a href="index.html" style="color:var(--yellow)">Return to base →</a></p></div>`;
   }
 }
 
