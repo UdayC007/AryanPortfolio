@@ -29,5 +29,5 @@
     { "name": "Figma",           "level": 88, "rank": "S" },
     { "name": "Design Systems",  "level": 75, "rank": "A" }
   ],
-  "photos": { "hero": null, "about": null, "brand": null }
+  "photos": { "hero": "uploads/aryan-hero.jpg", "about": "uploads/aryan-hero.jpg", "brand": "uploads/aryan-hero.jpg" }
 }
