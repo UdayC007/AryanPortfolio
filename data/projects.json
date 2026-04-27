@@ -1,1 +1,36 @@
-{"items":[]}
+{
+  "items": [
+    {
+      "id": "p2-kantha-history",
+      "title": "Weaving a Sustainable Future",
+      "description": "A textile-art installation exploring Kantha — the traditional embroidery of West Bengal and Bangladesh — through the story of Amma, a village elder whose stitches hold a community together. Using a 5W analysis (Where, When, Who, What, Why), the project ties this 19th-century craft to the UN Sustainable Development Goals, showing how slow, hand-stitched making becomes a quiet form of climate action and cultural memory.\n\nGroup project: Lakshay, Manvi, Pranshi, Amoli, Priyan.",
+      "teacher": "",
+      "category": "History",
+      "year": "2025",
+      "tags": ["History", "Textile", "Group Project", "Cultural Heritage"],
+      "link": "",
+      "color": "#a26b3a",
+      "images": [
+        "uploads/aryan-p2-kantha-story.jpg"
+      ],
+      "createdAt": 1745728000000
+    },
+    {
+      "id": "p1-visual-foundations",
+      "title": "Visual Design Foundations",
+      "description": "Three foundation studies on how design speaks. **Product Analysis** breaks down a rabbit-themed helmet from multiple angles, listing its functional features (kipper-on-head, button-to-open windshield, air filter, silicone ear cushion). **Design Matrix** maps real-world brand logos onto the building blocks of design — dot, line, shape, form, colour, texture, pattern. **Colour Psychology** pairs eight colour families (black, pink, orange, red, green, blue, yellow, brown) with the moods they carry and the brands that lean into each.",
+      "teacher": "Lakshmi",
+      "category": "Empathy and Design",
+      "year": "2025",
+      "tags": ["Foundation", "Visual Design", "Branding", "Colour Theory"],
+      "link": "",
+      "color": "#f2a900",
+      "images": [
+        "uploads/aryan-p1-product-analysis.jpg",
+        "uploads/aryan-p1-design-matrix.jpg",
+        "uploads/aryan-p1-colour-psychology.jpg"
+      ],
+      "createdAt": 1745724000000
+    }
+  ]
+}
